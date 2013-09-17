@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0;
+	padding:0;
+	border:none;
+}
+a img {border:none;}
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	background:url(img/bg.jpg);
+	margin:2em 0 0.5em;
+}
+#page {
+	width:800px;
+	margin:2em auto;
+	position:relative;
+}
+#help {
+	text-align:left;
+	margin-left:320px;
+	margin-bottom:5px;
+	color:#b8b8b8;
+	font-size:90%;
+}
+#help img {
+	margin-left:20px;
+	vertical-align:bottom;
+}
+form {
+	display:inline-block;
+	width:190px;
+}
+select {
+	border-radius:10px;
+	background-color:#b8b8b8;
+	padding:4px 10px;
+	
+}
+option {
+	color:#151515;
+	padding:0 4px;
+	vertical-align:middle;
+}
+header {text-align:center;}
+#left, #right {position:absolute;}
+#left {
+	width:150px;
+	top:0;
+	left:0;
+}
+#right {
+	width:150px;
+	right:0;
+	top:0;
+}
+#middle {
+	background:#000;
+	margin:0 170px;
+	border-radius:20px;
+	padding:30px;
+}
+#left section, #right section {
+	border-radius:20px;
+	margin-bottom:30px;
+	padding:20px;
+}
+#left section img {
+	display:block;
+	margin:5px auto;
+	border:solid 1px #151515;
+}
+#right section {text-align:center;}
+#left section a img, #help img {opacity:0.6;}
+#box4 img {opacity:0.4;}
+#left section a:hover img,#help img:hover, #left section img.selected, #box4 img:hover, #box4 .show {opacity:1;}
+#box1, #box2, #box3, #box4, #box5, #box6 {height:110px;}
+#box1 {background:#61a520 url(img/bg-box1.jpg) top repeat-x;}
+#box2 {background:#88b804 url(img/bg-box2.jpg) top repeat-x;}
+#box3 {background:#a9b803 url(img/bg-box3.jpg) top repeat-x;}
+#box4 {background:#c6a700 url(img/bg-box4.jpg) top repeat-x;}
+#box5 {background:#c77200 url(img/bg-box5.jpg) top repeat-x;}
+#box6 {background:#ca4400 url(img/bg-box6.jpg) top repeat-x;}
+#box4 img, #help img {cursor:pointer;}
+h3 {
+	text-align:center;
+	font-size:110%;
+	margin-bottom:20px;
+}
+#score, #timer {
+	color:#fff;
+	font-weight:bold;
+}
+.no {display:none;}
+footer {
+	text-align:center;
+	margin-top:30px;
+	color:#6a6a6a;
+	font-size:90%;
+	line-height:1.5em;
+}
+footer a {opacity:0.2;}
+footer a img {margin-bottom:0.5em;}
+footer a:hover {opacity:1;}
+
+article p {
+	text-align:justify;
+	margin-bottom:1.5em;
+	color:#B8B8B8;
+}
+article h3 {
+	color:#6FAD0E;
+	font-size:110%;
+	margin-bottom:1em;
+}
+mark {
+	color:#E77500;
+	background:transparent;
+}
+#tested {font-size:70%;}
+#tested span {font-size:90%;}
+footer section {
+	line-height:1.2em;
+	margin-top:1em;
+}

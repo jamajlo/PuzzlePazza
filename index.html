@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Puzzle pazza - puzzle game" />
+<meta name="keywords" content="html5, html 5, puzzle, pazza, game" />
+<title>Puzzle Pazza</title>
+<link rel="stylesheet" href="main.css" media="screen" />
+<link rel="icon" href="pazza.ico" type="image/ico">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body onLoad="initialize();">
+	<header><a href="/" title="Home Page Puzzle Pazza"><img src="img/logo.png" width="245" height="81" alt="Puzzle Pazza" /></a></header>
+	<div id="page">	
+		<section id="help">
+			<form id="choice"><fieldset><label for="puzzleDim">Puzzle size</label> <select id="puzzleDim" onChange="changeDimension(this);"><option value="3">3x3</option><option value="4" selected="selected">4x4</option><option value="5">5x5</option></select></fieldset></form>
+			<img src="img/ico-full-image.png" width="24" height="24" alt="Show solved puzzle" onClick="fullImage();" title="Show solved puzzle (loosing points)" />
+			<img src="img/ico-help.png" width="24" height="24" alt="Hint" title="Hint" onClick="help();" />
+		</section>
+		<nav id="left">
+			<section id="box1"><a href="#level1" title="Úroveň 1"><img src="img/panda-mini.jpg" width="100" height="100" alt="KungFu Panda" onClick="change(this,1);" class="selected"/></a></section>
+			<section id="box2"><a href="#level2" title="Úroveň 2"><img src="img/bled-mini.jpg" width="100" height="100" alt="Jazero Bled" onClick="change(this,2);" /></a></section>
+			<section id="box3"><a href="#level3" title="Úroveň 3"><img src="img/picasso-mini.jpg" width="100" height="100" alt="Picasso - autoportrét" onClick="change(this,3);" /></a></section>
+		</nav>
+		<div id="middle">
+			<canvas id="canvas" width="400" height="400" class="no"></canvas>
+			<article>
+				<!-- <h3>Puzzle <mark>Pazza</mark></h3>
+				<p>Aplikácia na spríjemnenie dlhých nudných chvíľ.</p>
+				
+				<p>Na výber sú tri obrázky rôznych obtiažností. Na každej úrovni je možné vybrať si počet dielov puzzlí (3x3, 4x4, 5x5).</p>
+				<p>Hrá sa spúšťa <mark>zeleným</mark> tlačítkom, zastavuje <mark>červeným</mark>. Nad puzzlami sa nachádza možnosť zobraziť celý obrázok (strata bodov v skóre za každé zobrazenie). Obrázok sa skryje po 2 sekundách.</p>
+				<p>Puzzle sa posúvajú klikaním. Jednoducho klikneš na puzzlu, ktorá ma okolo seba voľné miesto a posunia sa.</p>
+				<p>Voľné políčko je vždy vpravo dole.</p>
+				<p>Pri úspešnom zložení puzzlí sa objaví skóre. Skóre zohľadňuje čas, za ktorý boli puzzle zložené, počet dielov puzzlí a počet zobrazení celého obrázku. Každa úroveň má vlastné skóre.</p>
+				<p>Zastavenú hru nie je možné opäť spustiť, len odznova.</p> -->
+				<h3>Puzzle <mark>Pazza</mark></h3>
+				<p>Are you bored? Try Puzzle Pazza!</p>
+				
+				<p>You can choose three puzzles of different levels. Each level consists from 3 sizes of the puzzle (3x3, 4x4 and 5x5).</p>
+				<p>The game is started by <mark>the green button</mark>, stopped by <mark>the red one</mark>.</p>
+				<p>You move the pieces by clicking on them.</p>
+				<p>The empty field is always the bottom right one.</p>
+				<p>Try to solve the puzzle as fast as you can to get the best score.</p>	
+			</article>
+		</div>
+		<div id="right">
+			<section id="box4">
+				<img src="img/ico-start.png" width="48" height="48" alt="start" onClick="startPlay();" title="New Game" id="startIcon" /><br/><br/>
+				<img src="img/ico-stop.png" width="48" height="48" alt="stop" onClick="stopPlay();" title="Stop the game. You can`t cotinue the stopped game." id="stopIcon" class="show" />					
+			</section>
+			<section id="box5">
+				<h3><img src="img/ico-clock.png" width="48" height="48" alt="time" title="Playing time" /></h3>
+				<span id="timer">00:00</span>
+				
+			</section>
+			<section id="box6">
+				<h3><img src="img/ico-best.png" width="48" height="48" alt="Best score" title="Best score" /></h3>
+				<span id="score">0</span>
+			</section>
+		</div>
+		<footer>
+			<a href="http://www.w3.org/html/logo/">
+<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics">
+</a><br/>
+			&copy;jam 2011<br/>
+			<section id="tested">tested on: Internet Explorer 9, Mozilla Firefox 4, Google Chrome 11, Safari 5, Opera 11*<br/>
+			<span>* problems with element mark</span></section>
+		</footer>
+	</div>
+</body>
+</html>
