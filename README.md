@@ -13,6 +13,6 @@ You can choose three kind of puzzles of different levels. Each level consists fr
 
 The game is started by the green button, stopped by the red one.
 
-You move the pieces by clicking on them. The empty field is always the bottom right one.
+You move the pieces by clicking on them. The empty field is always the bottom right.
 
 Try to solve the puzzle as fast as you can to get the best score.
